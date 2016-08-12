@@ -7,5 +7,5 @@ Store a form post in mysql
 
 ## Connect to the MySql Server  
 
-    sh connect-to-mysql-shell.sh
+    sh open-db-shell.sh
 
