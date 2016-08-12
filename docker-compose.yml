@@ -1,4 +1,5 @@
 mysqldb:
+  container_name: mysqldb
   image: mysql
   volumes:
     - ~/Downloads/mysqldata:/var/lib/mysql
