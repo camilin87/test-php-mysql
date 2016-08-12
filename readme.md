@@ -3,7 +3,7 @@ Store a form post in mysql
 
 ## Dev Environment Setup  
 
-    docker-compose up -d
+    docker-compose up
 
 ## DB Setup  
 
