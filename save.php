@@ -24,5 +24,5 @@
 
     mysqli_close($conn);
 
-    echo "New record created successfully";
+    header( 'Location: success.html' ) ;
 ?>
