@@ -5,3 +5,11 @@ mysqldb:
     - ~/Downloads/mysqldata:/var/lib/mysql
   environment:
     - MYSQL_ROOT_PASSWORD=123abc
+
+phpwebserver:
+  container_name: phpweb
+  image: webgriffe/php-apache-base
+  ports:
+   - "8080:80"
+  volumes:
+    - .:/var/www/html
