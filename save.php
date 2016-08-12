@@ -13,8 +13,9 @@
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    $vendor = test_input($_POST["vendor"]);
-    $ingredient = test_input($_POST["ingredient"]);
+    //TODO: sanitize these inputs
+    $vendor = $_POST["vendor"];
+    $ingredient = $_POST["ingredient"];
 
     $sql = "INSERT INTO submissions (vendor, ingredient) VALUES ('".$vendor."', '".$ingredient."')";
 
