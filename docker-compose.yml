@@ -1,0 +1,6 @@
+mysqldb:
+  image: mysql
+  volumes:
+    - ~/Downloads/mysqldata:/var/lib/mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=123abc
