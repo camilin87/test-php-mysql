@@ -1,6 +1,8 @@
 mysqldb:
   container_name: mysqldb
   image: mysql
+  ports:
+   - "3306:3306"
   volumes:
     - ~/Downloads/mysqldata:/var/lib/mysql
   environment:
@@ -13,3 +15,5 @@ phpwebserver:
    - "8080:80"
   volumes:
     - .:/var/www/html
+  links:
+    - mysqldb
